@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Change Pin"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/oldpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLength="4"
+        android:ems="10"
+        android:hint="Old Pin"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/changePin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:maxLength="4"
+        android:hint="New Lock Pin"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/changeConfirmPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:maxLength="4"
+        android:hint=" Confirm Lock Pin"
+        android:inputType="numberPassword" />
+
+
+    <Button
+        android:id="@+id/setPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/button2"
+        android:text="Set Pin"
+        android:textColor="@android:color/white" />
+</LinearLayout>

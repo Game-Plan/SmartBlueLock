@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        android:text="Send Authority"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/elockid"
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Lock Id"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_below="@+id/elockid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_below="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/button2"
+        android:text="Send"
+        android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="LOADING..."
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="50dp"
+            android:textAlignment="center"
+            android:visibility="invisible"/>
+        <EditText
+            android:id="@+id/timer"
+            android:layout_below="@+id/loading"
+            android:layout_width="30dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:inputType="number"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun May 06 03:55:04 IST 2018
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\Rajeev Sengar\\Documents\\Minor\\SmartBlueLock\\app\\build\\intermediates\\assets\\debug
+0.path=Gif.gif
+0.set=ASSET
+count=1

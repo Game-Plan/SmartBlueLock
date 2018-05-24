@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    tools:context=".Registration"
+    android:background="@drawable/bg_gradient_registration">
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/submain"
+        >
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Registration"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/lockid"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/heading1"
+            android:focusable="true"
+            android:hint="Lock Id "
+            android:textColorHint="#fff"
+            android:maxLength="6"
+            android:textColorHighlight="#ff7eff15"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockid"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:hint="Password"
+            android:textColorHint="#fff"
+            android:textSize="15dp"
+            android:maxLength="8"
+            android:textColorHighlight="#ff7eff15"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockid"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:hint="Code"
+            android:textColorHint="#fff"
+            android:textSize="15dp"
+            android:maxLength="8"
+            android:textColorHighlight="#ff7eff15"
+            android:inputType="text"
+            android:visibility="invisible"
+            />
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:textSize="15dp"
+            android:hint="Confirm Pass"
+            android:textColorHint="#fff"
+            android:maxLength="8"
+            android:textColorHighlight="#ff7eff15"
+            android:inputType="textPassword"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/submain1"
+        android:layout_toRightOf="@+id/submain"
+        >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#A9A9A9"/>
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="App Lock"
+            android:paddingBottom="20dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/lockpasstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/heading2"
+            android:text="Lock Pin"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/lockpin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockpasstext"
+            android:layout_marginLeft="60dp"
+            android:hint="XXXX"
+            android:textColorHint="#fff"
+            android:inputType="numberPassword"
+            android:maxLength="4" />
+
+
+        <TextView
+            android:id="@+id/lockconfirmpasstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/lockpin"
+            android:text="Confirm Lock Pin"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/confirmLockPin"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockconfirmpasstext"
+            android:layout_marginLeft="60dp"
+            android:hint="XXXX"
+            android:textColorHint="#fff"
+            android:inputType="numberPassword"
+            android:maxLength="4" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="34dp"
+       android:layout_marginLeft="120dp"
+        android:backgroundTint="@color/button"
+        android:text="Register"
+        android:clickable="true"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_marginLeft="120dp"
+        android:text="Loading..."
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/load"
+        android:layout_marginLeft="60dp"
+        android:textColor="#fff"
+        android:inputType="number"
+        android:layout_centerInParent="true"
+        android:text="4"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/submain1">
+        <RadioButton
+            android:id="@+id/radioprimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="47dp"
+            android:textColor="#fff"
+            android:text="Primary User"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/radiosecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioButton2"
+            android:layout_alignBottom="@+id/radioButton2"
+            android:layout_alignEnd="@+id/submain1"
+            android:textColor="#fff"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="47dp"
+            android:text="Secondary User"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+</RelativeLayout>

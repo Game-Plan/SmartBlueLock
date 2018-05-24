@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">192039009722-qscifiq7pibhrcn9m2v3havr06drcsg6.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://bluelock-d1c49.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">192039009722</string>
+    <string name="google_api_key" translatable="false">AIzaSyB6OOFUGo5Ot_0cc8G413R8IqY2ah543Ro</string>
+    <string name="google_app_id" translatable="false">1:192039009722:android:70cf3c6821ba14b4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB6OOFUGo5Ot_0cc8G413R8IqY2ah543Ro</string>
+    <string name="google_storage_bucket" translatable="false">bluelock-d1c49.appspot.com</string>
+    <string name="project_id" translatable="false">bluelock-d1c49</string>
+</resources>

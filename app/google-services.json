@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "192039009722",
+    "firebase_url": "https://bluelock-d1c49.firebaseio.com",
+    "project_id": "bluelock-d1c49",
+    "storage_bucket": "bluelock-d1c49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192039009722:android:70cf3c6821ba14b4",
+        "android_client_info": {
+          "package_name": "com.helix.smartbluelock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192039009722-qscifiq7pibhrcn9m2v3havr06drcsg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6OOFUGo5Ot_0cc8G413R8IqY2ah543Ro"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
